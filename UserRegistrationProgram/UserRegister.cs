@@ -11,6 +11,7 @@ namespace UserRegistrationProgram
     {
         // Static Variable
         public static string firstNamePattern = "^[A-Z]{1}[a-z]{2}";
+        public static string lastNamePattern = "^[A-Z]{1}[a-z]{2}";
         //Method to Validate First Name
         public static string ValidateFirstName(string name)
         {
@@ -19,7 +20,15 @@ namespace UserRegistrationProgram
             else
                 return "false";
         }
+        //Method to Validate Last Name
+        public static string ValidateLastName(string name)
+        {
+            if (Regex.IsMatch(name, lastNamePattern))
+                return "true";
+            else
+                return "false";
+        }
     }
 }
-   
+
 
