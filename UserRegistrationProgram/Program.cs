@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 namespace UserRegistrationProgram
 {
     public class Program
-    {
-        //Method to perform UserRegistration
+    {//Method to perform UserRegistration
         public static void UserRegistration()
         {
             bool Continue = true;
@@ -30,7 +29,7 @@ namespace UserRegistrationProgram
                     case 2:
                         Console.WriteLine("Enter Last Name");
                         string lastName = Console.ReadLine();
-                        Console.WriteLine(UserRegister.ValidateLastName(lastName));
+                        Console.WriteLine(UserRegister.ValidateFirstName(lastName));
                         break;
                     case 3:
                         Console.WriteLine("Enter Email ID");
