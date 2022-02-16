@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserRegistrationProgram
 {
+    //class inheriting Base class
     public class UserRegisterException : Exception
     {
         public ExceptionType type;
